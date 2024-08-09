@@ -1,0 +1,99 @@
+:root {
+    --small_hr_padding: -0.5%;
+    --big_hr_padding: -2%;
+    --primary: rgb(50, 50, 50);
+    --secondary: rgb(24, 24, 24);
+    --main_block_color: rgb(36, 36, 36);
+}
+.headr {
+    background-color: var(--secondary);
+    width: fit-content;
+    align-self: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    outline: solid;
+    outline-color: gray;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+h1 {
+    margin-bottom: 10%;
+}
+h2 {
+    font-size: 48pt;
+}
+body {
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 24pt;
+    
+    font-family: "Segoe UI";
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.main_block {
+    background-color: var(--main_block_color);
+    outline: solid;
+    outline-color: rgb(95, 95, 95);
+    padding-bottom: 3%;
+}
+hr {
+    margin-top: var(--small_hr_padding);
+    margin-bottom: var(--small_hr_padding);
+    width: 33%;
+}
+.reduced_padding_hr {
+    margin-top: var(--big_hr_padding);
+    margin-bottom: var(--big_hr_padding);
+    width: 66%;
+}
+br {
+    height: 10px;
+}
+.main_block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 66%;
+}
+.education {
+    outline: solid;
+    outline-color: white;
+    background-color: var(--secondary);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.projects_row {
+    font-size: 12pt;
+    text-align: left;
+    display: flex;
+    width: 85%;
+}
+.cell {
+    display: flex;
+    flex-flow: row;
+}
+h3 {
+    margin: 0%;
+}
+td {
+    padding-right: 0%;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+}
+.preview_img {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+    margin-right: 3%;
+    border: solid;
+    border-color: cyan;
+    border-width: 1px;
+}
+.brief_description {
+    align-content: center;
+}

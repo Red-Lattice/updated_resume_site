@@ -124,3 +124,11 @@ li {
     flex-wrap: wrap;
 
 }
+.contact {
+	display: flex;
+	text-align: center;
+	flex-flow: column;
+	align-items: center;
+	margin-bottom: 50px;
+	text-decoration: underline;
+}

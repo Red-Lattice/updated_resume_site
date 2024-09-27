@@ -17,6 +17,17 @@ a, a:link, a:visited {
 a:hover {
     color: rgb(134, 233, 234);
 }
+.coverer {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-color: black;
+	transition: background-color 1s ease-out;
+	pointer-events: none;
+}
 .extern_links {
 	font-size: 16pt;
 	display: flex;
@@ -25,6 +36,26 @@ a:hover {
 	gap: 10px;
 	line-height: 30px;
 }
+hr {
+	color: white;
+	width: 500px;
+	transition: width 1s ease-out;
+}
+@media (min-width: 900px) {
+	hr {
+		margin-left: 100px;
+		width: 500px;
+		transition: width 1s ease-out;
+	}
+}
+@media (min-width: 1300px) {
+	hr {
+		margin-left: 100px;
+		width: 0;
+		transition: width 1s ease-out;
+	}
+}
+
 .standard_block {
 	margin-top: 75px;
 	margin-bottom: 100px;
@@ -74,7 +105,7 @@ a:hover {
 		max-width: 900px;
 	}
 	.aligner {
-		flex-flow: row;
+		flex-flow: row-reverse;
 		align-items: center;
 		text-align: left;
 	}
@@ -86,10 +117,20 @@ img {
 	width: 241px;
 	height: 128px;
 	border-radius: 10px;
-	margin-right: 3%;
+	margin-left: 3%;
 	border: solid;
-	border-color: cyan;
-	border-width: 1px;
+	border-width: 3px;
+}
+.vt_img {
+	width: 180px;
+	height: 180px;
+	border-radius: 10px;
+	margin-left: 0;
+}
+@media (min-width: 767px) {
+	.vt_img {
+		margin-left: 75px;
+	}
 }
 li {
 	margin-top: 15px;
@@ -107,11 +148,16 @@ li {
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
+	padding-top: 26px;
+	border-style: solid;
+	border-width: 1px;
+	padding-top: 39px;
 }
 @media (min-width: 1100px) {
 	.li_el {
 		flex-basis: 290px;
 		flex: 1 0 5px;
+		line-height: 32px;
 	}
 	.combined_list {
 		height: 350px;
@@ -121,6 +167,8 @@ li {
 	.li_el {
 		flex-basis: 290px;
 		flex: 1 0 50px;
+		line-height: 15px;
+		margin-top: -3px;
 	}
 	.combined_list {
 		height: 350px;

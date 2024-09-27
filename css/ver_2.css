@@ -110,6 +110,37 @@ hr {
 		text-align: left;
 	}
 }
+@media screen and (min-width: 767px) {
+	.extern_links {
+		font-size: 16pt;
+		margin-left: 100px;
+		margin-top: 50px;
+		flex-flow: row;
+		gap: 20px;
+		line-height: 30px;
+	}
+	.standard_block {
+		margin: 150px;
+		margin-top: 75px;
+		margin-bottom: 100px;
+		max-width: 755px;
+	}
+	.wide {
+		margin-top: -30px;
+		max-width: 1200px;
+	}
+	.subblock {
+		margin: 50px;
+		margin-bottom: 10px;
+		font-size: 14pt;
+		max-width: 900px;
+	}
+	.aligner {
+		flex-flow: row-reverse;
+		align-items: center;
+		text-align: left;
+	}
+}
 h2, h3{
 	color: white;
 }
